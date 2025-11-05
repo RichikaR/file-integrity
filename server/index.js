@@ -16,7 +16,6 @@ const PORT = process.env.PORT || 3001;
 const HMAC_KEY = process.env.HMAC_KEY || "SECRET_KEY_456";
 
 app.use(helmet());
-import cors from 'cors';
 
 app.use(cors({
   origin: [
