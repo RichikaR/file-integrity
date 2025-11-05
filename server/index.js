@@ -16,8 +16,13 @@ const PORT = process.env.PORT || 3001;
 const HMAC_KEY = process.env.HMAC_KEY || "SECRET_KEY_456";
 
 app.use(helmet());
+import cors from 'cors';
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',                    // Local development
+    'https://file-integrity-five.vercel.app'    // Production frontend (UPDATE THIS!)
+  ],
   credentials: true
 }));
 app.use(express.json());
