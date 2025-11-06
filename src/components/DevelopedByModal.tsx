@@ -30,8 +30,8 @@ export default function DevelopedByModal() {
             className="w-24 h-24 rounded-full object-cover border-4 border-blue-300 shadow-lg"
           />
           <div className="flex-1">
-            <h5 className="text-lg font-bold text-gray-900">Dr. Swaminathan A</h5>
-           
+            <h5 className="text-lg font-bold text-gray-900">Dr. Swaminathan Annadurai </h5>
+            <p>Assistant Professor at Vellore Institute of Technology (VIT), Chennai Campus.</p>
           </div>
         </div>
       </div>
